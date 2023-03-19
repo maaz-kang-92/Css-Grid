@@ -1,0 +1,123 @@
+.wrapper {
+    width: 700px;
+    height: 610px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: grid;
+    /* this is used for increase and decrease the pexel of the boxes! */
+    grid-template-columns: 150px 100px 0px 110px 100px auto auto; /* check it out on inspect */
+
+    /* auto is used to recover remaining width.. */
+    grid-template-rows: 220px 40px 30px auto;
+
+    /* we can also use 1fr 1fr(fraction) that equally divide rows and columns if we use 2fr means double than others....... */
+    
+    /* grid-gap: 20px --in rows and columns 20px gap.... */
+
+    /* use the syntax of span 2 or 3 with the grid-t-row and grid-t-column later---- */
+}
+
+/* 1/2 means hold from 1 to 2 rows and columns as rows or columns increase as width will reduced! */
+
+div {
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.5;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#a {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-top-left-radius: 20px;
+    background-color: rgb(248, 37, 37);
+    color:white;
+}
+#b {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: rgb(36, 255, 105);
+    color:white;
+}
+#c {
+    grid-row: 1/2;
+    grid-column: 3/6;   /* hold 3 column from 3 to 6.... */
+    background-color: rgb(98, 255, 51);
+    color:white;
+    
+}
+#d {
+    grid-row: 1/2;
+    grid-column: 6/7;
+    background-color: rgb(27, 240, 255);
+    color:white;
+}
+#e {
+    grid-row: 1/2;
+    grid-column: 7/8;
+    border-top-right-radius: 20px;
+    background-color: rgb(232, 57, 255);
+    color:white;
+}
+#f {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    background-color: rgb(242, 255, 63);
+    color:white;
+}
+#g {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    background-color: rgb(40, 255, 51);
+    color:white;
+}
+#h {
+    grid-row: 2/4;
+    grid-column: 3/6;   /* how 3 to 6 columns*/
+    background-color: rgb(249, 173, 22);
+    color:white;
+}
+#i  {
+    grid-row: 2/4;
+    grid-column: 6/7;
+    background-color: rgb(255, 93, 30);
+    color:white;
+}
+#j  {
+    grid-row: 2/ span 2;  /* hold two rows from 2 to 4*/
+    grid-column: 7/8;
+    background-color: rgb(255, 44, 251);
+    color:white;
+}
+#k  {
+    grid-row: 4/ span 2;
+    grid-column: 1/2;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(55, 55, 255);
+    color:white;
+}
+#l  {
+    grid-row: 4/span 2;
+    grid-column: 2/3;
+    background-color: rgb(44, 19, 23);
+    color:white;
+}
+#m  {
+    grid-row: 4/ span 2;
+    grid-column: 3/6 ;
+    background-color: rgb(58, 60, 57);
+    color:white;
+}
+#n  {
+    grid-row: 4/ span 2;  /* hold two rows 4 to 6*/
+    grid-column: 6/1;
+    background-color: rgb(1, 8, 14);
+    color:white;
+}
+#o  {
+    grid-row: 4/ span 2;
+    grid-column: 7/8;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(138, 70, 10);
+    color:white;
+}
