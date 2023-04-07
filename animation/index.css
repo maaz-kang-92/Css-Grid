@@ -1,0 +1,70 @@
+/*  this is the main part of the grid and topic...........*/
+.wrapper {
+    display: grid;
+    gap: 1%;
+}
+
+  figure {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 500px;
+    justify-self: center;
+   }
+
+  .cat1 {
+    animation-name: maaz;      /* The element to apply the animation to */
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+  }
+
+  @keyframes maaz {
+	0% { 
+    opacity: 1;
+	}
+  25% { 
+    opacity: 1;
+	}
+  75% {
+    opacity: 0;
+  }
+	100% { 
+		opacity: 0;
+
+	}
+}
+
+/* set the layout to border box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* set font family and background gradient */
+body {
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+/* Turn off margin, set by browser */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* caption styling  */
+figcaption {
+  background-color: #106587; 
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+figcaption {
+    margin-top: -8px;
+}

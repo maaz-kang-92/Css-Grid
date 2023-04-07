@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+
+            background-color: red;
+
+            /* this is used for movement of the box..*/
+            position: relative;
+
+            /* this is the name that is binded to the property where the animation is applied... */
+            animation-name: example;
+
+            /* The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds). */
+            animation-duration: 8s;
+
+            /* The animation-delay property specifies a delay for the start of an animation. */
+            animation-delay: 1s;
+
+            /* Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for -2(N) seconds.
+            animation-delay: -2s; */
+
+            /* The animation-iteration-count property specifies the number of times an animation should run. */
+            animation-iteration-count: 3;
+            /* infinite  for ever animation*/
+
+            animation-direction: alternate;
+            /* reverse, normal alternate-reverse*/
+
+            animation-timing-function: ease-in;
+            /*ease, ease-in, ease-out, linear, ease-in-out */
+
+            animation-fill-mode: forwards;
+            /* it will stop at the end of the animation_*/
+            /* animation-fill-mode: backwards;  it will start within delay time */
+
+            /* animation-play-state: paused and running */
+        }
+
+        /*
+        @keyframes example {
+
+        In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)). 
+        from {background-color: red;}
+        to {background-color: rgb(255, 255, 255);} 
+        }  
+        */
+
+        /* @keyframes example {
+            0% {
+                background-color: rgb(0, 255, 238);
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: rgb(155, 201, 155);
+            }
+        } */
+
+        @keyframes example {
+            0% {
+                background-color: rgb(255, 0, 234);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(0, 255, 13);
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+
+</html>
