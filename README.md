@@ -1,2 +1,3 @@
 # Css-Grid
-This is the css grid part of maaz's  respository
+Css-grid part of maaz's respository!
+You Can visit and check it out!
